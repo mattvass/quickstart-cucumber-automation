@@ -32,11 +32,11 @@ public abstract class AbstractPageObject {
 	}
 
 	protected void initializePage(Object page) {
-		PageFactory.initElements(getWebDriver(), this);
+		PageFactory.initElements(getWebDriver(), page);
 	}
 
 	protected void initializePage(Object page, String testName) {
-		PageFactory.initElements(getWebDriver(testName), this);
+		PageFactory.initElements(getWebDriver(testName), page);
 	}
 
 	public void closeWebDriver() {
