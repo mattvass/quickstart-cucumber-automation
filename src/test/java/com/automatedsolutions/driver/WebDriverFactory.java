@@ -20,7 +20,11 @@ import org.openqa.selenium.safari.SafariOptions;
 
 import com.automatedsolutions.common.ApplicationConstants;
 import com.automatedsolutions.common.ErrorMessages;
-
+/**
+ * 
+ * @author Matthew Vass Created: February 11, 2018
+ *
+ */
 public class WebDriverFactory {
 
 	private static final Logger log = Logger.getLogger(WebDriverFactory.class.getName());
@@ -35,6 +39,10 @@ public class WebDriverFactory {
 		this.caps = caps;
 	}
 
+	/**
+	 * Gets WebDriver using set capabilities
+	 * @return WebDriver
+	 */
 	public WebDriver getDriver() {
 		if (null == driver) {
 
@@ -73,11 +81,19 @@ public class WebDriverFactory {
 		return driver;
 	}
 
+	/**
+	 *  Gets WebDriver using set capabilities and sets the test name
+	 * @param testName
+	 * @return WebDriver
+	 */
 	public WebDriver getDriver(String testName) {
 		this.testName = testName;
 		return getDriver();
 	}
 
+	/**
+	 * Quits the WebDriver
+	 */
 	public void quit() {
 		if (null != driver) {
 			driver.close();

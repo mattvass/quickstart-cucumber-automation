@@ -6,6 +6,11 @@ import com.automatedsolutions.common.ApplicationConstants;
 import com.automatedsolutions.config.spring.ApplicationConfiguration;
 import cucumber.api.Scenario;
 
+/**
+ * 
+ * @author Matthew Vass Created: February 11, 2018
+ *
+ */
 @ContextConfiguration(classes = ApplicationConfiguration.class)
 public abstract class AbstractStepDefinition {
 	protected Scenario scenario;
@@ -29,6 +34,12 @@ public abstract class AbstractStepDefinition {
 		scenario.write(xml);
 	}
 
+	/**
+	 * Gets the scenario name and the example row it's running from the current
+	 * running scenario
+	 * 
+	 * @return testName
+	 */
 	protected String getTestName() {
 		int exampleRow = Integer.parseInt(scenario.getId().split(";;")[1].trim()) - 2;
 		return String.format(ApplicationConstants.SCENARIO_NAME, scenario.getName(), exampleRow);

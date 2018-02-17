@@ -6,6 +6,11 @@ import com.automatedsolutions.pages.GooglePageObject;
 
 import cucumber.api.Scenario;
 
+/**
+ * 
+ * @author Matthew Vass Created: February 11, 2018
+ *
+ */
 public abstract class AbstractGoogleSteps extends AbstractStepDefinition {
 
 	/*
@@ -16,6 +21,9 @@ public abstract class AbstractGoogleSteps extends AbstractStepDefinition {
 	@Autowired
 	protected GooglePageObject googlePage;
 
+	/**
+	 * Call abstract before method and then initialize page factory
+	 */
 	public void before(Scenario scenario) {
 		super.before(scenario);
 		googlePage.init(super.getTestName());

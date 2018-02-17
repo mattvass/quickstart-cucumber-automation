@@ -1,5 +1,10 @@
 package com.automatedsolutions.common;
 
+/**
+ * 
+ * @author Matthew Vass Created: February 11, 2018
+ *
+ */
 public class ApplicationConstants {
 
 	public static final String WEBDRIVER_BROWSER = "webdriver.browser";

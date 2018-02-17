@@ -6,6 +6,11 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import com.automatedsolutions.common.ApplicationConstants;
 import com.automatedsolutions.config.ApplicationProperties;
 
+/**
+ * 
+ * @author Matthew Vass Created: February 11, 2018
+ * 
+ */
 public class BrowserCapabilities {
 
 	private ApplicationProperties properties;

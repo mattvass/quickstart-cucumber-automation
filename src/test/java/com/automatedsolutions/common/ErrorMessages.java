@@ -1,5 +1,10 @@
 package com.automatedsolutions.common;
 
+/**
+ * 
+ * @author Matthew Vass Created: February 11, 2018
+ *
+ */
 public class ErrorMessages {
 
 	public static final String LOAD_QUEUE_ERROR = "Error loading drivers into queue: %s";

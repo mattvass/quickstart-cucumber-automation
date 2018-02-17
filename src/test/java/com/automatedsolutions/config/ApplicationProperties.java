@@ -5,6 +5,11 @@ import org.springframework.core.env.Environment;
 
 import com.automatedsolutions.common.ApplicationConstants;
 
+/**
+ * 
+ * @author Matthew Vass Created: February 11, 2018
+ *
+ */
 public class ApplicationProperties {
 
 	@Autowired

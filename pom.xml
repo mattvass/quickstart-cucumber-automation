@@ -16,6 +16,7 @@
 		<surefire.version>2.19.1</surefire.version>
 		<parallel.count>2</parallel.count>
 		<cucumber.jvm.parallel.version>4.2.0</cucumber.jvm.parallel.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<build>
